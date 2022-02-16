@@ -1,0 +1,19 @@
+{
+  "files": {
+    "static/js/0.83057924.chunk.js": "/blackMastery/cherimoya.io.git/static/js/0.83057924.chunk.js",
+    "main.js": "/blackMastery/cherimoya.io.git/static/js/main.2745d09b.chunk.js",
+    "runtime-main.js": "/blackMastery/cherimoya.io.git/static/js/runtime-main.575de8dd.js",
+    "static/css/3.46819cf2.chunk.css": "/blackMastery/cherimoya.io.git/static/css/3.46819cf2.chunk.css",
+    "static/js/3.bbc6900e.chunk.js": "/blackMastery/cherimoya.io.git/static/js/3.bbc6900e.chunk.js",
+    "static/js/4.083be9ea.chunk.js": "/blackMastery/cherimoya.io.git/static/js/4.083be9ea.chunk.js",
+    "index.html": "/blackMastery/cherimoya.io.git/index.html",
+    "static/js/3.bbc6900e.chunk.js.LICENSE.txt": "/blackMastery/cherimoya.io.git/static/js/3.bbc6900e.chunk.js.LICENSE.txt",
+    "static/media/slick-theme.css": "/blackMastery/cherimoya.io.git/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.575de8dd.js",
+    "static/css/3.46819cf2.chunk.css",
+    "static/js/3.bbc6900e.chunk.js",
+    "static/js/main.2745d09b.chunk.js"
+  ]
+}
