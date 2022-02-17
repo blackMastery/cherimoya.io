@@ -100,27 +100,7 @@ const Agency = (): JSX.Element => {
           </Box>
         </Container>
       </Box>
-      <Box
-        className={'jarallax'}
-        data-jarallax
-        data-speed="0.2"
-        position={'relative'}
-        minHeight={'100vh'}
-        display={'flex'}
-        alignItems={'center'}
-        id="agency__portfolio-item--js-scroll"
-      >
-        <Box
-          className={'jarallax-img'}
-          sx={styles(
-            'https://images.unsplash.com/photo-1627521742129-bf9cda19b21f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80',
-          )}
-        />
-        <Container>
-          <Goby />
-        </Container>
-      </Box>
-
+   
       <Box
         minHeight={'100vh'}
         display={'flex'}

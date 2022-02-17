@@ -7,7 +7,6 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
     "prettier:fix": "prettier './src/**/*.{tsx,ts}' --write",
     "eslint:fix": "eslint ./src --fix",

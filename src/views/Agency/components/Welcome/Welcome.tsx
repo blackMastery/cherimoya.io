@@ -4,12 +4,24 @@ import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
+import Avatar from '@mui/material/Avatar';
 
 const Welcome = (): JSX.Element => {
   const theme = useTheme();
 
   const GridItemHeadlineBlock = () => (
     <Box>
+      <Box display={'flex'} justifyContent={'center'} >
+
+        <Box
+          component={Avatar}
+          width={{ xs: 80, sm: 80, md: 120 }}
+          height={{ xs: 80, sm: 80, md: 120 }}
+          src={"https://cherimoya-assets.s3.amazonaws.com/Cherimoya-2.jpg"}
+          marginRight={2}
+        />
+      </Box>
+
       <Typography
         variant="h3"
         align={'center'}
@@ -29,40 +41,13 @@ const Welcome = (): JSX.Element => {
           fontWeight: 400,
         }}
       >
-       Welcome to Cherimoya, where you can effortlessly schedule your life - 
-       and get together to have fun even when you’re in different parts of the world.
+        Welcome to Cherimoya, where you can effortlessly schedule your life -
+        and get together to have fun even when you’re in different parts of the world.
       </Typography>
     </Box>
   );
 
-  // const GridItemPartnersBlock = () => (
-  //   <Box display="flex" flexWrap="wrap" justifyContent={'center'}>
-  //     {[
-  //       'https://assets.maccarianagency.com/svg/logos/airbnb-original.svg',
-  //       'https://assets.maccarianagency.com/svg/logos/amazon-original.svg',
-  //       'https://assets.maccarianagency.com/svg/logos/fitbit-original.svg',
-  //       'https://assets.maccarianagency.com/svg/logos/netflix-original.svg',
-  //       'https://assets.maccarianagency.com/svg/logos/google-original.svg',
-  //       'https://assets.maccarianagency.com/svg/logos/paypal-original.svg',
-  //     ].map((item, i) => (
-  //       <Box maxWidth={80} marginTop={2} marginRight={4} key={i}>
-  //         <Box
-  //           component="img"
-  //           height={1}
-  //           width={1}
-  //           src={item}
-  //           alt="..."
-  //           sx={{
-  //             filter:
-  //               theme.palette.mode === 'dark'
-  //                 ? 'brightness(0) invert(0.7)'
-  //                 : 'contrast(0) brightness(0)',
-  //           }}
-  //         />
-  //       </Box>
-  //     ))}
-  //   </Box>
-  // );
+
 
   return (
     <Box>
@@ -84,7 +69,6 @@ const Welcome = (): JSX.Element => {
             display="flex"
             justifyContent={'center'}
           >
-            {/* <GridItemPartnersBlock /> */}
           </Box>
         </Grid>
       </Grid>
