@@ -19,7 +19,7 @@ const Goby = (): JSX.Element => {
           textTransform: 'uppercase',
         }}
       >
-       Your reality, virtual!
+       Be The First One
       </Typography>
       <Typography
         variant="h6"
@@ -30,8 +30,7 @@ const Goby = (): JSX.Element => {
           color: theme.palette.common.white,
         }}
       >
-        Cherimoya is an exclusive, live, digital experience you create for your friends and family that also 
-        takes the pain and frustration out of coordinating schedules and managing RSVPs.
+        
       </Typography>
     </Box>
   );

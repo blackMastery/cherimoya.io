@@ -7,7 +7,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-   "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
     "prettier:fix": "prettier './src/**/*.{tsx,ts}' --write",
     "eslint:fix": "eslint ./src --fix",
@@ -37,6 +37,7 @@
   "dependencies": {
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
+    "@hubspot/api-client": "^6.0.1-beta2",
     "@mui/icons-material": "^5.0.1",
     "@mui/material": "^5.0.2",
     "aos": "^2.3.4",
