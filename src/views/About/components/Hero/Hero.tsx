@@ -13,7 +13,7 @@ const Hero = (): JSX.Element => {
         return;
       }
 
-      const { jarallax } = await import('jarallax');
+      const { jarallax } = await import('jarallax/index');
       jarallax(jarallaxElems, { speed: 0.2 });
     };
 
