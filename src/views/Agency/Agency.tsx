@@ -1,22 +1,10 @@
 import React, { useEffect } from 'react';
-import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import NoSsr from '@mui/material/NoSsr';
-
-import Main from 'layouts/Main';
+import Avatar from '@mui/material/Avatar';
 import Container from 'components/Container';
-import {
-  Welcome,
-  Goby,
-  Process,
-  Nike2,
-  Larq,
-  Nike,
-  Trek,
-  Curology,
-  Reviews,
-  Contact,
-} from './components';
+import { Welcome, Reviews } from './components';
+import Typography from '@mui/material/Typography';
 
 const Agency = (): JSX.Element => {
   useEffect(() => {
@@ -44,35 +32,18 @@ const Agency = (): JSX.Element => {
     });
   };
 
-  const theme = useTheme();
-
-  const styles = (bgImage: string) =>
-    ({
-      position: 'absolute',
-      objectFit: 'cover',
-      /* support for plugin https://github.com/bfred-it/object-fit-images */
-      fontFamily: 'object-fit: cover;',
-      top: 0,
-      left: 0,
-      width: '100%',
-      height: '100%',
-      zIndex: -1,
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center center',
-      backgroundImage: `url(${bgImage})`,
-      filter: theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',
-    } as const);
-
   return (
     <>
       <Box
         minHeight={'100vh'}
         display={'flex'}
         alignItems={'center'}
-        bgcolor={'alternate.main'}
+        // bgcolor={'alternate.main'}
         marginTop={-13}
         paddingTop={13}
+        sx={{
+          backgroundColor: '#1a0053',
+        }}
       >
         <Container>
           <Box display={'flex'} flexDirection={'column'} alignItems={'center'}>
@@ -87,7 +58,7 @@ const Agency = (): JSX.Element => {
                   width={{ xs: 30, sm: 40 }}
                   height={{ xs: 30, sm: 40 }}
                   onClick={() => scrollTo('agency__portfolio-item--js-scroll')}
-                  sx={{ cursor: 'pointer' }}
+                  sx={{ cursor: 'pointer', color: '#ffffff' }}
                 >
                   <path
                     fillRule="evenodd"
@@ -100,7 +71,7 @@ const Agency = (): JSX.Element => {
           </Box>
         </Container>
       </Box>
-   
+
       <Box
         minHeight={'100vh'}
         display={'flex'}
@@ -112,8 +83,40 @@ const Agency = (): JSX.Element => {
         </Container>
       </Box>
 
+      <Box
+        minHeight={'100vh'}
+        display={'flex'}
+        alignItems={'center'}
+        // bgcolor={'alternate.main'}
 
+        sx={{
+          backgroundColor: '#aeb45a',
+        }}
+      >
+        <Container>
+          <Box display={'flex'} justifyContent={'center'}>
+            <Box
+              component={Avatar}
+              width={{ xs: 80, sm: 80, md: 120 }}
+              height={{ xs: 80, sm: 80, md: 120 }}
+              src={'https://cherimoya-assets.s3.amazonaws.com/Cherimoya-2.jpg'}
+              marginRight={2}
+            />
+          </Box>
 
+          <Typography
+            variant="h3"
+            align={'center'}
+            gutterBottom
+            sx={{
+              fontWeight: 900,
+              color: '#ffffff',
+            }}
+          >
+            Cherimoya
+          </Typography>
+        </Container>
+      </Box>
     </>
   );
 };

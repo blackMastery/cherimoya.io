@@ -28,6 +28,8 @@ const Welcome = (): JSX.Element => {
         gutterBottom
         sx={{
           fontWeight: 900,
+          color: "#ffffff"
+
         }}
       >
         Cherimoya
@@ -35,10 +37,11 @@ const Welcome = (): JSX.Element => {
       <Typography
         variant="h6"
         component="p"
-        color="text.secondary"
+        // color="text.secondary"
         align={'center'}
         sx={{
           fontWeight: 400,
+          color: "#ffffff"
         }}
       >
         Welcome to Cherimoya, where you can effortlessly schedule your life -

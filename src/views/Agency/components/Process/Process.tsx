@@ -1,7 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState } from 'react';
-import CountUp from 'react-countup';
-import VisibilitySensor from 'react-visibility-sensor';
 import { useTheme } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
@@ -9,26 +7,6 @@ import Box from '@mui/material/Box';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-
-const mock = [
-  {
-    title: 300,
-    subtitle:
-      '300 + component compositions, which will help you to build any page easily.',
-    suffix: '+',
-  },
-  {
-    title: 45,
-    subtitle:
-      '45 + landing and supported pages to Build a professional website.',
-    suffix: '+',
-  },
-  {
-    title: 99,
-    subtitle: '99% of our customers rated 5-star our themes over 5 years.',
-    suffix: '%',
-  },
-];
 
 const Process = (): JSX.Element => {
   const theme = useTheme();
